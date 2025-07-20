@@ -12,17 +12,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/icons8-mario-48.png">
 
-  <title>Portfolio</title>
+
+  <title>Manjit's Site</title>
 </head>
 <body>
   <!-- NAVBAR -->
   <nav>
-    <div class="left" id="left">
+    <div class="left box" id="left">
       <a href="#">Manjit Pun</a>
     </div>
 
-    <div class="right">
+    <div class="right box">
       <a href="https://github.com/manjitmagar" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-github"></i>
         <span>Github</span>
@@ -46,7 +48,7 @@
 
   <main>
     <!-- SECTION 1: Hero -->
-    <section class="hero-section">
+    <section class="hero-section box">
       <div class="text">
         <h2>Hi, I'm Manjit Pun 👋</h2>
         <h3>IT Engineer 💻 </h3>
@@ -68,17 +70,25 @@
             <span>Hobbies</span>
           </a>
           
-          <a href="#projects">
+          <a href="#projects-section">
             <i class="fa-solid fa-pen"></i>
             <span>Projects</span>
           </a>
 
           
           
-          <a href="#contact">
+          <!-- <a href="#contact">
             <i class="fa-solid fa-envelope"></i>
             <span>Contact</span>
-          </a>
+          </a> -->
+
+         <a href="files/ManjitPun.pdf" download target="_blank">
+  <i class="fa-solid fa-file-arrow-down"></i>
+  <span>My CV</span>
+</a>
+
+
+
         </div>
       </div>
 
@@ -88,7 +98,7 @@
     </section>
 
     <!-- SECTION 2: Skills -->
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section box">
       <h2>Skills</h2>
       <div class="text">
 
@@ -160,7 +170,7 @@
 
     <!-- Hobbies Section -->
 
-    <section id="hobbies" class="skills-section">
+    <section id="hobbies" class="skills-section box">
       <h2>Hobbies</h2>
       <div class="text">
 
@@ -199,51 +209,45 @@
 
 
     <!-- SECTION 3: Projects -->
-    <section id="projects" class="testimony-section">
-      <h2>Projects</h2>
-
-      <div class="group">
-        <div class="person-details">
-          <a href="https://github.com/manjitmagar/React-Js-App-Interface-For-Major-Project/tree/main/manjitmagar" target="_blank" rel="noopener noreferrer"><img src="images/vechile dtection.jpg" id="null" ></a>
-          <h3><p>Flow Sync Traffic Optimization</p></h3>
-          <!-- <p>Lorem ipsum dolor sit.</p> -->
+    <section id="projects-section">
+    <div class="flex-container box">
+      <h2 id="proj">Projects</h2>
+      <details>
+        <summary>
+          <span class="number">1</span>
+          <h3 class="project-name">Flow Sync Traffic Optimization</h3>
+        </summary>
+        <div class="text-container">
+          <p class="project-name1">Flow Sync is a smart traffic optimization web application designed to reduce congestion by dynamically adjusting traffic light durations based on real-time vehicle density. For this project, I employed a combination of Python-Django for the backend and React.js for the frontend, with YOLO (You Only Look Once) for vehicle detection through computer vision. The system processes live video feeds to detect the number of vehicles in each lane and uses this data to optimize traffic signal timings accordingly. This project not only highlights my skills in full-stack development but also demonstrates my interest in integrating emerging technologies like AI and IoT to solve urban challenges. It represents a practical approach to making smart cities more efficient and sustainable.</p>
+          <img src="images/vechile dtection.jpg" alt="" height="200px" width="400px">
+          <a class="project-link" href="https://github.com/manjitmagar/React-Js-App-Interface-For-Major-Project/tree/main/manjitmagar" target="_blank" rel="noopener noreferrer">Visit Github <i class="fa-brands fa-github"></i></a>
+          
+          
         </div>
-
-        <div class="text">
-          Flow Sync is a smart traffic optimization web application designed to reduce congestion by dynamically adjusting traffic light durations based on real-time vehicle density. For this project, I employed a combination of Python-Django for the backend and React.js for the frontend, with YOLO (You Only Look Once) for vehicle detection through computer vision. The system processes live video feeds to detect the number of vehicles in each lane and uses this data to optimize traffic signal timings accordingly. This project not only highlights my skills in full-stack development but also demonstrates my interest in integrating emerging technologies like AI and IoT to solve urban challenges. It represents a practical approach to making smart cities more efficient and sustainable.
+      </details>
+      <details>
+        <summary><span class="number">2</span><h3 class="project-name">LPG Gas Ordering System</h3></summary>
+        <div class="text-container">
+          <p class="project-name1">The LPG Gas Ordering System is a robust backend solution designed to streamline the process of ordering liquefied petroleum gas online. I developed this system to handle critical functions such as user authentication, inventory management, and real-time order processing. One of the key features of the system is its seamless integration with secure payment gateways, allowing customers to place and pay for orders with confidence. Additionally, I implemented real-time order tracking to provide users with live updates on their order status, enhancing transparency and user experience. This project showcases my proficiency in backend development and my ability to build scalable, secure systems that meet real-world commercial needs.</p>
+                    <img src="images/LPG.webp" alt="" height="200px" width="400px">
+          <a class="project-link" href="https://github.com/manjitmagar/LPG-GAS-OS" target="_blank" rel="noopener noreferrer">Visit Github <i class="fa-brands fa-github"></i></a>
         </div>
-      </div>
-
-
-      <div class="group">
-        <div class="person-details">
-         <a href="https://github.com/manjitmagar/LPG-GAS-OS" target="_blank" rel="noopener noreferrer"> <img src="images/LPG.webp" id="null"></a>
-          <h3><p>LPG Gas Ordering System</p></h3>
-          <!-- <p>Lorem ipsum dolor sit.</p> -->
+      </details>
+      <details>
+        <summary><span class="number">3</span><h3 class="project-name">Laptop Hospital Web App</h3></summary>
+        <div class="text-container">
+          <p class="project-name1">The Laptop Hospital Web App is a user-friendly e-commerce platform designed to simplify the buying experience for laptops and related accessories. I developed this web application with a focus on intuitive design and functionality, ensuring users could easily browse, search, and purchase products. The platform features a clean UI/UX and was built to support future enhancements such as customer reviews, inventory tracking, and promotional tools. My work on this project demonstrates a strong understanding of front-end design principles as well as backend integration, resulting in a responsive and engaging shopping experience. This project also reflects my ability to align technical solutions with business goals and user expectations.</p>
+                    <img src="images/laptop.webp" alt="" height="200px" width="400px">
+<a class="project-link" href="https://github.com/manjitmagar/Laptop-Hospital" target="_blank" rel="noopener noreferrer">Visit Github <i class="fa-brands fa-github"></i></a>
         </div>
-
-        <div class="text">
-          The LPG Gas Ordering System is a robust backend solution designed to streamline the process of ordering liquefied petroleum gas online. I developed this system to handle critical functions such as user authentication, inventory management, and real-time order processing. One of the key features of the system is its seamless integration with secure payment gateways, allowing customers to place and pay for orders with confidence. Additionally, I implemented real-time order tracking to provide users with live updates on their order status, enhancing transparency and user experience. This project showcases my proficiency in backend development and my ability to build scalable, secure systems that meet real-world commercial needs.
+      </details>
 
 
-        </div>
-      </div>
-
-
-      <br><div class="group">
-        <div class="person-details">
-          <a href="https://github.com/manjitmagar/Laptop-Hospital" target="_blank" rel="noopener noreferrer"><img src="images/laptop.webp" id="null"></a>
-         <h3> <p>Laptop Hospital Web App</p></h3>
-          <!-- <p>Lorem ipsum dolor sit.</p> -->
-        </div>
-
-        <div class="text">
-          The Laptop Hospital Web App is a user-friendly e-commerce platform designed to simplify the buying experience for laptops and related accessories. I developed this web application with a focus on intuitive design and functionality, ensuring users could easily browse, search, and purchase products. The platform features a clean UI/UX and was built to support future enhancements such as customer reviews, inventory tracking, and promotional tools. My work on this project demonstrates a strong understanding of front-end design principles as well as backend integration, resulting in a responsive and engaging shopping experience. This project also reflects my ability to align technical solutions with business goals and user expectations.
-      </div>
-    </section>
+    </div>
+  </section>
 
     <!-- SECTION 4: Contact -->
-    <section id="contact" class="contact-section">
+    <!-- <section id="contact" class="contact-section">
       <h2>Contact</h2>
 
       <div class="group">
@@ -264,10 +268,13 @@
           <button type="submit" onclick="sayNamaste()">Send Message</button>
         </form>
       </div>
-    </section>
+    </section> -->
   </main>
 
-  <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+<button id="scrollToTopBtn"  title="Go to top">
+  <img src="images/up-arrow.png" alt="Up arrow icon">
+</button>
+
 
   <script>
 
