@@ -18,6 +18,9 @@
   <title>Manjit's Site</title>
 </head>
 <body>
+
+ 
+
   <!-- NAVBAR -->
   <nav>
     <div class="left box" id="left">
@@ -75,6 +78,7 @@
             <span>Projects</span>
           </a>
 
+            
           
           
           <!-- <a href="#contact">
@@ -82,10 +86,18 @@
             <span>Contact</span>
           </a> -->
 
+          <a href="#Achivements">
+            <i class="fa-solid fa-medal"></i>
+            <span>Achivements</span>
+          </a>
+
          <a href="files/ManjitPun.pdf" download target="_blank">
   <i class="fa-solid fa-file-arrow-down"></i>
   <span>My CV</span>
 </a>
+
+        
+
 
 
 
@@ -171,6 +183,7 @@
     <!-- Hobbies Section -->
 
     <section id="hobbies" class="skills-section box">
+       
       <h2>Hobbies</h2>
       <div class="text">
 
@@ -246,6 +259,40 @@
     </div>
   </section>
 
+      <section id="Achivements" class="skills-section box">
+      <h2>Achivements</h2>
+      <div class="text">
+
+
+      </div>
+
+      <section id="certificates" class="skills-section">
+  <!-- <h2>Certificates</h2> -->
+  <div class="grid-container certificates">
+    <div class="grid-item cert">
+      <img src="images/certificate1.jpg" alt="Python AI Training" onclick="openPopup(this)" />
+      <p class="cert-title">Python AI Training</p>
+    </div>
+    <div class="grid-item cert">
+      <img src="images/certificate2.jpg" alt="Hackfest Best Innovation" onclick="openPopup(this)" />
+      <p class="cert-title">Hackfest Best Innovation</p>
+    </div>
+    <div class="grid-item cert">
+      <img src="images/certificate3.jpg" alt="Project Exhibition" onclick="openPopup(this)" />
+      <p class="cert-title">NCIT Project Exhibition</p>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Popup -->
+<div id="popup" class="popup" onclick="closePopup()">
+  <span class="close">&times;</span>
+  <img class="popup-img" id="popup-img" src="" alt="Preview">
+</div>
+
+    </section>
+
+
     <!-- SECTION 4: Contact -->
     <!-- <section id="contact" class="contact-section">
       <h2>Contact</h2>
@@ -275,44 +322,10 @@
   <img src="images/up-arrow.png" alt="Up arrow icon">
 </button>
 
+<div id="glow-cursor"></div>
+  <script src="script.js"></script>
 
-  <script>
 
-    const scrollBtn = document.getElementById("scrollToTopBtn");
-
-  window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      scrollBtn.style.display = "block";
-    } else {
-      scrollBtn.style.display = "none";
-    }
-  };
-
-  scrollBtn.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-
-    function sayNamaste() {
-    alert("Hahahahaha");
-    window.location.href = "https://github.com/manjitmagar"; // replace with your link
-  }
-  // Preventing browser from restoring scroll position
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
-
-  // Scrolling to top on load
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
-  }
-  
-  );
-</script>
 
 
 </body>
