@@ -710,6 +710,21 @@ body {
   z-index: 9999;
 }
 
+.image-res {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    text-align: center;
+  }
+}
+
 
 
 
