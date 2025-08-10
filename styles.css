@@ -726,5 +726,57 @@ body {
 }
 
 
+/* Default light theme styles are in your main styles.css */
+
+/* Dark theme overrides */
+body.dark-theme {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-theme nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme a {
+  color: #f1f1f1;
+}
+
+body.dark-theme .box {
+  background-color: #1a1a1a;
+}
+
+body.dark-theme .cells .cell {
+  background-color: #222;
+  border: 1px solid #333;
+}
+
+body.dark-theme .cells .cell span {
+  color: #f1f1f1;
+}
+
+body.dark-theme details {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+}
+
+body.dark-theme summary {
+  color: #f1f1f1;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: transparent;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Smooth transition for theme switch */
+body, nav, .box, .cell, details {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
 
 
