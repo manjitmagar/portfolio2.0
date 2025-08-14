@@ -70,29 +70,7 @@ function closePopup() {
       '0 0 8px 4px rgba(0, 200, 255, 0.7), 0 0 15px 8px rgba(0, 200, 255, 0.5)';
   });
 
-  // Select elements
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
-
-// Load saved theme from localStorage
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
-  themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-}
-
-// Toggle theme
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-theme");
-
-  if (body.classList.contains("dark-theme")) {
-    themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    localStorage.setItem("theme", "dark");
-  } else {
-    themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    localStorage.setItem("theme", "light");
-  }
-});
-
+  
 
   
 
